@@ -13,6 +13,7 @@
 4. Nguồn tài liệu chính bắt buộc:
    - `reference/codex/`
    - `reference/opencode/`
+   - `reference/docs/` (nguồn tổng hợp/audit để tra cứu nhanh; không thay thế source gốc khi cần verify sâu)
 5. Phân công ownership theo folder khi chia subagents; tuyệt đối tránh overlap chỉnh sửa file.
 6. Chạy lệnh/test theo package scope phù hợp với vùng ảnh hưởng, tránh chạy tràn toàn workspace.
 7. Nhánh mặc định của repo hiện tại: `main`.
@@ -21,8 +22,8 @@
 ## Quy trình đề xuất
 1. Nạp repomix để dựng bản đồ context tổng thể.
 2. Chia domain theo folder/package, gán owner rõ cho từng subagent.
-3. Subagents tra cứu chi tiết trong `reference/codex/` và `reference/opencode/`.
-4. Tổng hợp kết quả và cross-check lại với repomix trước khi chốt quyết định.
+3. Subagents tra cứu chi tiết trong `reference/codex/` và `reference/opencode/`; dùng `reference/docs/` làm baseline tổng hợp khi có.
+4. Tổng hợp kết quả và cross-check lại với repomix + `reference/docs/` trước khi chốt quyết định.
 5. Thực thi/chỉnh sửa trong scope ownership đã phân công.
 6. Verify bằng test/lệnh đúng package scope; báo cáo kết quả theo format ngắn.
 
@@ -31,3 +32,4 @@
 - `reference/repomix-opencode.xml`
 - `reference/codex/`
 - `reference/opencode/`
+- `reference/docs/`
